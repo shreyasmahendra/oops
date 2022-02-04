@@ -1,3 +1,40 @@
+#simple class and function calls
+class employee:
+    def __init__(self):
+        self.name = "shreyas"
+        self.salarly = 10000
+
+    def function(self):
+        return (self.name, self.salarly)
+
+
+e = employee()
+print(e.function())
+
+
+class employee1:
+    name = "shreyas"
+
+    @classmethod
+    def fun(cls):
+        return (employee1.name)
+
+
+print(employee1.fun())
+
+
+class emp2:
+    name = "sswxx"
+
+    @staticmethod
+    def fun2():
+        print("this is somthing")
+        return (emp2.name)
+
+
+print(emp2.fun2())
+
+
 class computer:
 
     def __init__(self,a,b):
@@ -87,9 +124,7 @@ class stu:
     @staticmethod
     def getSchool():
         print("this is a static method we can use for our use just to know like factorial like that ")
-    
-    
-    
+       
 s1 = stu(34,33,33)
 print(s1.avg())   
 print(stu.info())#we must pass a parameter inside as cls but we r using decoratores so we need not  
@@ -155,7 +190,7 @@ c1.feture4()
 b1.feture1()
 
 '''
- constructor,mro = method resolution order it calls from left to right
+ constructor,mro = method resolution order it calls from left to right(if we use super().method() or super().__init__()
  the object first calls the innit method and then if init is in b then it first calls b init and then a 
  
 '''
@@ -186,12 +221,12 @@ c1.feat()
         
 '''
 polymorphism when we use it loose coupling ,interface,dependency injection
-duck typing
+duck typing = if we have ide and execute method then its duck typing 
 operator overloading
 method overloading
 method overriding
 '''
-#this is duck typing  we just use execute method inside the class and we call it like ide = classname
+#this is duck typing  we just use execute method inside the class and we call it like ide = classobject() 
 class Myeditor:
     def execute(self):
         print("compiling")
@@ -205,7 +240,7 @@ ide = Myeditor()
 
 l1 = Lap()
 l1.code(ide) 
-#########################################
+######################################### method overloading
 
 class S:
     def __init__(self,m1,m2):

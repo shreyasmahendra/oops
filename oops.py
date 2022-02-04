@@ -43,4 +43,27 @@ print(r1.__sub__())
 print(r1.__mul__())
 print(r1.__div__())
 
-    
+class XY:
+    #def __init__(self,a1,b1,c1):
+        #self.a = a1
+        #self.b = b1
+        #self.c = c1 
+    def get(self):
+        return self.a 
+       
+        
+    def set(self,value1):
+        self.a = value1
+       
+        
+x1 = XY()
+x1.set("a")
+print(x1.get())   
+
+
+class Vehicle:
+    def __init__(self):
+        self.max_speed = 40
+        self.mileage = 30
+        
+a1 = Vehicle()        
